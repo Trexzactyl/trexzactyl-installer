@@ -241,8 +241,8 @@ install_wings() {
     output "Installing Wings daemon..."
     
     # Create directory
-    mkdir -p $WINGS_PATH
-    cd $WINGS_PATH
+    mkdir -p "$WINGS_PATH"
+    cd "$WINGS_PATH" || exit
     
     # Download Wings
     output "Downloading latest Wings binary..."
