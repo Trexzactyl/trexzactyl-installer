@@ -188,7 +188,8 @@ enable_swap() {
     output "Configuring swap memory..."
     
     # Check if swap already exists
-    if [ $(swapon --show | wc -l) -gt 0 ]; then
+    SWAP_COUNT=$(swapon --show | wc -l)
+    if [ "$SWAP_COUNT" -gt 0 ]; then
         output "Swap is already configured"
         return
     fi
