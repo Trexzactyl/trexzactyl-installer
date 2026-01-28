@@ -13,6 +13,36 @@ set -e
 # Get script directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
+# GitHub repository base URL
+REPO_URL="https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master"
+
+# Detect if running from curl (script in /dev/fd/)
+if [[ "$0" == "/dev/fd/"* ]] || [[ "$0" == "/proc/"*"/fd/"* ]]; then
+    RUNNING_FROM_CURL=true
+    # Create a temporary directory for downloaded scripts
+    TEMP_INSTALL_DIR=$(mktemp -d -t trexzactyl-installer-XXXXXX)
+    SCRIPT_DIR="$TEMP_INSTALL_DIR"
+    trap "rm -rf $TEMP_INSTALL_DIR" EXIT
+else
+    RUNNING_FROM_CURL=false
+fi
+
+# Function to download a script if running from curl
+download_script() {
+    local script_name="$1"
+    local script_path="$SCRIPT_DIR/$script_name"
+    
+    if [ "$RUNNING_FROM_CURL" = true ]; then
+        echo "Downloading $script_name..."
+        if ! curl -sSL "$REPO_URL/$script_name" -o "$script_path"; then
+            print_message "error" "Failed to download $script_name"
+            return 1
+        fi
+        chmod +x "$script_path"
+    fi
+    return 0
+}
+
 # Source UI components
 source "$SCRIPT_DIR/ui/styles.sh" 2>/dev/null || {
     # Fallback if UI not available
@@ -169,12 +199,13 @@ install_panel() {
     
     if [ "$PANEL_INSTALLED" = true ]; then
         print_message "warning" "Panel is already installed!"
-        if confirm "Do you want to reinstall?"; then
-            bash "$SCRIPT_DIR/install.sh"
+        if ! confirm "Do you want to reinstall?"; then
+            return
         fi
-    else
-        bash "$SCRIPT_DIR/install.sh"
     fi
+    
+    download_script "install.sh" || return 1
+    bash "$SCRIPT_DIR/install.sh"
 }
 
 install_wings() {
@@ -184,12 +215,13 @@ install_wings() {
     
     if [ "$WINGS_INSTALLED" = true ]; then
         print_message "warning" "Wings is already installed!"
-        if confirm "Do you want to reinstall?"; then
-            bash "$SCRIPT_DIR/wings.sh"
+        if ! confirm "Do you want to reinstall?"; then
+            return
         fi
-    else
-        bash "$SCRIPT_DIR/wings.sh"
     fi
+    
+    download_script "wings.sh" || return 1
+    bash "$SCRIPT_DIR/wings.sh"
 }
 
 install_phpmyadmin() {
@@ -199,12 +231,13 @@ install_phpmyadmin() {
     
     if [ "$PHPMYADMIN_INSTALLED" = true ]; then
         print_message "warning" "phpMyAdmin is already installed!"
-        if confirm "Do you want to reinstall?"; then
-            bash "$SCRIPT_DIR/phpmyadmin.sh"
+        if ! confirm "Do you want to reinstall?"; then
+            return
         fi
-    else
-        bash "$SCRIPT_DIR/phpmyadmin.sh"
     fi
+    
+    download_script "phpmyadmin.sh" || return 1
+    bash "$SCRIPT_DIR/phpmyadmin.sh"
 }
 
 setup_database_host() {
@@ -214,12 +247,13 @@ setup_database_host() {
     
     if [ "$DATABASE_HOST_SETUP" = true ]; then
         print_message "warning" "Database host appears to be already configured!"
-        if confirm "Do you want to reconfigure?"; then
-            bash "$SCRIPT_DIR/database.sh"
+        if ! confirm "Do you want to reconfigure?"; then
+            return
         fi
-    else
-        bash "$SCRIPT_DIR/database.sh"
     fi
+    
+    download_script "database.sh" || return 1
+    bash "$SCRIPT_DIR/database.sh"
 }
 
 update_panel() {
@@ -233,6 +267,7 @@ update_panel() {
         return
     fi
     
+    download_script "update.sh" || return 1
     bash "$SCRIPT_DIR/update.sh"
 }
 
@@ -248,9 +283,12 @@ uninstall_panel() {
     fi
     
     print_message "warning" "This will completely remove the panel!"
-    if confirm "Are you absolutely sure?"; then
-        bash "$SCRIPT_DIR/uninstall.sh"
+    if ! confirm "Are you absolutely sure?"; then
+        return
     fi
+    
+    download_script "uninstall.sh" || return 1
+    bash "$SCRIPT_DIR/uninstall.sh"
 }
 
 run_tests() {
@@ -258,6 +296,7 @@ run_tests() {
     print_header "Running Installation Tests"
     echo ""
     
+    download_script "test.sh" || return 1
     bash "$SCRIPT_DIR/test.sh"
     pause
 }
