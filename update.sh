@@ -84,7 +84,7 @@ backup_panel() {
     read -sp "Enter database password: " DB_PASS
     echo
     
-    mysqldump -u $DB_USER -p$DB_PASS $DB_NAME > "$BACKUP_DIR/${BACKUP_NAME}_database.sql"
+    mysqldump -u "$DB_USER" -p"$DB_PASS" "$DB_NAME" > "$BACKUP_DIR/${BACKUP_NAME}_database.sql"
     
     output "Backup created at: $BACKUP_DIR/${BACKUP_NAME}"
     output "Files: ${BACKUP_NAME}_files.tar.gz"

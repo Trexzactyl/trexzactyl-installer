@@ -98,7 +98,7 @@ test_services() {
 test_database_connection() {
     output "Testing database connection..."
     
-    cd $PANEL_PATH
+    cd $PANEL_PATH || return
     if php artisan db:show &>/dev/null; then
         pass "Database connection successful"
     else
