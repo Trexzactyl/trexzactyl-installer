@@ -17,14 +17,14 @@ Before installing Trexzactyl Panel, ensure you have:
 Run the following command as root:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/install.sh)
 ```
 
 ### Manual Installation
 
 1. Download the installer:
 ```bash
-curl -Lo install.sh https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/install.sh
 ```
 
 2. Make it executable:
@@ -170,7 +170,7 @@ php artisan p:user:make
 
 Use the update script:
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/update.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/update.sh)
 ```
 
 ### Viewing Logs

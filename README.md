@@ -40,29 +40,29 @@ This installer features a beautiful, modern terminal UI with:
 ### Interactive Menu (Recommended)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/installer.sh)
 ```
 
 ### Individual Installations
 
 **Install Panel:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/install.sh)
 ```
 
 **Install Wings:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/wings.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/wings.sh)
 ```
 
 **Install phpMyAdmin:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/phpmyadmin.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/phpmyadmin.sh)
 ```
 
 **Setup Database Host:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/database.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/database.sh)
 ```
 
 ## Usage

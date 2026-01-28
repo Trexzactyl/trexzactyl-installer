@@ -12,7 +12,7 @@ Get Trexzactyl Panel up and running in minutes!
 ## Installation (One Command)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/install.sh)
 ```
 
 ## What You'll Be Asked
@@ -83,19 +83,19 @@ tail -f /var/www/trexzactyl/storage/logs/laravel.log
 ## Update Panel
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/update.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/update.sh)
 ```
 
 ## Test Installation
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/test.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/test.sh)
 ```
 
 ## Uninstall
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/uninstall.sh)
 ```
 
 ## Troubleshooting

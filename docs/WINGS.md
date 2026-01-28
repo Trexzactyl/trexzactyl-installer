@@ -14,7 +14,7 @@ Wings is the game server daemon for Trexzactyl Panel. This guide covers installa
 ### Quick Install
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/wings.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/wings.sh)
 ```
 
 ### What You'll Need
