@@ -1,0 +1,3 @@
+#!/bin/bash
+# Quick installer shortcut
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/master/installer.sh)
