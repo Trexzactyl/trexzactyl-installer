@@ -49,7 +49,7 @@ Before submitting a PR:
 ## Development Setup
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/trexzactyl-installer.git
+git clone https://github.com/Trexzactyl/trexzactyl-installer.git
 cd trexzactyl-installer
 chmod +x *.sh
 ```

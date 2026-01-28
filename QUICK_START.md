@@ -12,7 +12,7 @@ Get Trexzactyl Panel up and running in minutes!
 ## Installation (One Command)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
 ```
 
 ## What You'll Be Asked
@@ -83,19 +83,19 @@ tail -f /var/www/trexzactyl/storage/logs/laravel.log
 ## Update Panel
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/update.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/update.sh)
 ```
 
 ## Test Installation
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/test.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/test.sh)
 ```
 
 ## Uninstall
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/uninstall.sh)
 ```
 
 ## Troubleshooting
@@ -137,7 +137,7 @@ certbot --nginx -d panel.example.com
 
 📖 [Full Documentation](docs/INSTALLATION.md)  
 🐛 [Troubleshooting Guide](docs/TROUBLESHOOTING.md)  
-💬 [GitHub Issues](https://github.com/YOUR-USERNAME/trexzactyl-installer/issues)  
+💬 [GitHub Issues](https://github.com/Trexzactyl/trexzactyl-installer/issues)  
 
 ## Pro Tips
 

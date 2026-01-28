@@ -40,29 +40,29 @@ This installer features a beautiful, modern terminal UI with:
 ### Interactive Menu (Recommended)
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/installer.sh)
 ```
 
 ### Individual Installations
 
 **Install Panel:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
 ```
 
 **Install Wings:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/wings.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/wings.sh)
 ```
 
 **Install phpMyAdmin:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/phpmyadmin.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/phpmyadmin.sh)
 ```
 
 **Setup Database Host:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/database.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/database.sh)
 ```
 
 ## Usage
@@ -165,7 +165,7 @@ After installation:
 
 ## 🤝 Support
 
-- [GitHub Issues](https://github.com/YOUR-USERNAME/trexzactyl-installer/issues)
+- [GitHub Issues](https://github.com/Trexzactyl/trexzactyl-installer/issues)
 - [Documentation](docs/)
 - [Trexzactyl Panel](https://github.com/trexzactyl/trexzactyl)
 

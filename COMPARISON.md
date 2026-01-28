@@ -94,7 +94,7 @@ bash <(curl -s https://pterodactyl-installer.se)
 
 ### Trexzactyl
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
 ```
 
 **Both offer**:

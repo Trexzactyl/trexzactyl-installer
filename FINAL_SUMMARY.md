@@ -163,22 +163,22 @@ Loading... ⠋ ⠙ ⠹ ⠸ ⠼ ⠴ ⠦ ⠧ ⠇ ⠏
 
 ### Quick Start (Recommended)
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/installer.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/installer.sh)
 ```
 
 ### Individual Installations
 ```bash
 # Panel
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
 
 # Wings
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/wings.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/wings.sh)
 
 # phpMyAdmin
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/phpmyadmin.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/phpmyadmin.sh)
 
 # Database Host
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/database.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/database.sh)
 ```
 
 ---
@@ -355,7 +355,7 @@ This project successfully:
 
 ## 📞 Support & Links
 
-- **GitHub**: https://github.com/YOUR-USERNAME/trexzactyl-installer
+- **GitHub**: https://github.com/Trexzactyl/trexzactyl-installer
 - **Issues**: Report bugs and request features
 - **Documentation**: Complete guides included
 - **License**: MIT (Open Source)

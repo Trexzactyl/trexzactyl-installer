@@ -14,7 +14,7 @@ Wings is the game server daemon for Trexzactyl Panel. This guide covers installa
 ### Quick Install
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/wings.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/wings.sh)
 ```
 
 ### What You'll Need
@@ -344,5 +344,5 @@ rm -rf /var/lib/docker
 
 - Check logs: `journalctl -u wings -f`
 - Docker logs: `journalctl -u docker -f`
-- [GitHub Issues](https://github.com/YOUR-USERNAME/trexzactyl-installer/issues)
+- [GitHub Issues](https://github.com/Trexzactyl/trexzactyl-installer/issues)
 - [Troubleshooting Guide](TROUBLESHOOTING.md)

@@ -9,13 +9,13 @@ This guide explains how to update your Trexzactyl Panel to the latest version.
 The easiest way to update is using the automated update script:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/update.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/update.sh)
 ```
 
 Or download and run manually:
 
 ```bash
-curl -Lo update.sh https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/update.sh
+curl -Lo update.sh https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/update.sh
 chmod +x update.sh
 ./update.sh
 ```

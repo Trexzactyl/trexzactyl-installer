@@ -109,12 +109,12 @@ A complete, production-ready automated installer for Trexzactyl Panel, similar t
 
 ### Method 1: One-Line Install
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
 ```
 
 ### Method 2: Clone and Run
 ```bash
-git clone https://github.com/YOUR-USERNAME/trexzactyl-installer.git
+git clone https://github.com/Trexzactyl/trexzactyl-installer.git
 cd trexzactyl-installer
 chmod +x install.sh
 ./install.sh
@@ -122,7 +122,7 @@ chmod +x install.sh
 
 ### Method 3: Direct Download
 ```bash
-curl -Lo install.sh https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh
+curl -Lo install.sh https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh
 chmod +x install.sh
 ./install.sh
 ```
@@ -131,22 +131,22 @@ chmod +x install.sh
 
 ### Install Panel
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/install.sh)
 ```
 
 ### Update Panel
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/update.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/update.sh)
 ```
 
 ### Test Installation
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/test.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/test.sh)
 ```
 
 ### Uninstall Panel
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-installer/main/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/Trexzactyl/trexzactyl-installer/main/uninstall.sh)
 ```
 
 ## 📋 What Gets Installed
@@ -255,13 +255,13 @@ bash <(curl -s https://raw.githubusercontent.com/YOUR-USERNAME/trexzactyl-instal
    ```bash
    # Create new repo on GitHub, then:
    cd /root/trexzactyl-installer
-   git remote add origin https://github.com/YOUR-USERNAME/trexzactyl-installer.git
+   git remote add origin https://github.com/Trexzactyl/trexzactyl-installer.git
    git branch -M main
    git push -u origin main
    ```
 
 2. **Update URLs in Documentation**
-   - Replace `YOUR-USERNAME` with actual GitHub username
+   - Replace `Trexzactyl` with actual GitHub username
    - Update download links
 
 3. **Create GitHub Release**
