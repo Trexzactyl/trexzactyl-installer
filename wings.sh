@@ -246,7 +246,11 @@ install_wings() {
     
     # Download Wings
     output "Downloading latest Wings binary..."
-    ARCH=$([[ "$(uname -m)" == "x86_64" ]] && echo "amd64" || echo "arm64")
+    if [[ "$(uname -m)" == "x86_64" ]]; then
+        ARCH="amd64"
+    else
+        ARCH="arm64"
+    fi
     curl -L -o /usr/local/bin/wings "https://github.com/pterodactyl/wings/releases/latest/download/wings_linux_${ARCH}"
     
     chmod u+x /usr/local/bin/wings

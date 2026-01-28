@@ -72,7 +72,9 @@ backup_panel() {
     mkdir -p $BACKUP_DIR
     
     # Backup files
-    tar -czf "$BACKUP_DIR/${BACKUP_NAME}_files.tar.gz" -C $(dirname $PANEL_PATH) $(basename $PANEL_PATH)
+    PANEL_DIR=$(dirname "$PANEL_PATH")
+    PANEL_BASE=$(basename "$PANEL_PATH")
+    tar -czf "$BACKUP_DIR/${BACKUP_NAME}_files.tar.gz" -C "$PANEL_DIR" "$PANEL_BASE"
     
     # Backup database
     read -p "Enter database name to backup [panel]: " DB_NAME
