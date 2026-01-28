@@ -21,16 +21,28 @@ source "$SCRIPT_DIR/ui/styles.sh" 2>/dev/null || {
     WARNING='\033[1;33m'
     INFO='\033[0;36m'
     RESET='\033[0m'
+    DOT='•'
+    CHECK='✓'
+    CROSS='✗'
+    STAR='★'
 }
 
 source "$SCRIPT_DIR/ui/functions.sh" 2>/dev/null || {
     # Fallback functions
+    clear_screen() { clear; }
     print_header() { echo "=== $1 ==="; }
     print_message() { echo "[$1] $2"; }
     print_menu_option() { echo "  [$1] $2"; }
     print_banner() { echo "TREXZACTYL INSTALLER"; }
     confirm() { read -p "$1 [y/N]: " -r; [[ $REPLY =~ ^[Yy]$ ]]; }
     pause() { read -p "Press any key to continue..." -n1 -s; echo ""; }
+    print_line() { echo "----------------------------------------"; }
+    print_divider() { echo ""; }
+    print_status() { echo "[$1] $2"; }
+    print_box_top() { echo "========================================"; }
+    print_box_bottom() { echo "========================================"; }
+    print_box_empty() { echo ""; }
+    print_box_line_centered() { echo "$1"; }
 }
 
 ################################################################################
